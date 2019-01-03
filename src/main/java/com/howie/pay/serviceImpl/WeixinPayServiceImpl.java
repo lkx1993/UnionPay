@@ -21,6 +21,7 @@ import com.howie.pay.wxUtils.ConfigUtil;
 import com.howie.pay.wxUtils.HttpUtil;
 import com.howie.pay.wxUtils.PayCommonUtil;
 import com.howie.pay.wxUtils.XMLUtil;
+import org.springframework.stereotype.Service;
 
 @Service
 public class WeixinPayServiceImpl implements IWeixinPayService {

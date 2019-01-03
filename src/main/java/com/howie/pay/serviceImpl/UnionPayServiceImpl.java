@@ -16,6 +16,8 @@ import com.howie.pay.service.IUnionPayService;
 import com.howie.pay.unionpayUtils.AcpService;
 import com.howie.pay.unionpayUtils.SDKConfig;
 import com.howie.pay.unionpayUtils.UnionConfig;
+import org.springframework.stereotype.Service;
+
 @Service
 public class UnionPayServiceImpl implements IUnionPayService{
 	private static final Logger logger = LoggerFactory.getLogger(UnionPayServiceImpl.class);

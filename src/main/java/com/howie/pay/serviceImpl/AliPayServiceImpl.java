@@ -35,6 +35,8 @@ import com.howie.pay.aliUtils.CommonUtil;
 import com.howie.pay.constants.Constants;
 import com.howie.pay.dto.InfoDTO;
 import com.howie.pay.service.IAliPayService;
+import org.springframework.stereotype.Service;
+
 @Service
 public class AliPayServiceImpl implements IAliPayService {
 	private static final Logger logger = LoggerFactory.getLogger(AliPayServiceImpl.class);
