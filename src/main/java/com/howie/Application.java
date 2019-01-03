@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
         DataSourceAutoConfiguration.class
 })
 @MapperScan("com.howie.domain.mapper")
-@ImportResource({"classpath:spring-context-dubbo.xml"})
+//@ImportResource({"classpath:spring-context-dubbo.xml"})
 @Controller
 public class Application extends WebMvcConfigurerAdapter {
 	private static final Logger logger = Logger.getLogger(Application.class);

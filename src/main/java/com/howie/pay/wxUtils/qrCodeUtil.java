@@ -2,7 +2,6 @@ package com.howie.pay.wxUtils;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import com.alipay.demo.trade.utils.ZxingUtils;
 /**
  * 二维码生成器(扫码支付模式一)
  * @author hongyang.jiang
@@ -28,6 +27,6 @@ public class qrCodeUtil {
     	qrCode.append("&time_stamp="+packageParams.get("time_stamp"));
     	qrCode.append("&sign="+sign);
     	//生成二维码
-        ZxingUtils.getQRCodeImge(qrCode.toString(), 256, "D:\\weixn.png");
+//        ZxingUtils.getQRCodeImge(qrCode.toString(), 256, "D:\\weixn.png");
 	}
 }

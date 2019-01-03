@@ -10,8 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
-import com.alibaba.dubbo.config.annotation.Service;
-import com.alipay.demo.trade.utils.ZxingUtils;
 import com.howie.pay.aliUtils.CommonUtil;
 import com.howie.pay.constants.Constants;
 import com.howie.pay.dto.InfoDTO;
@@ -70,7 +68,7 @@ public class WeixinPayServiceImpl implements IWeixinPayService {
 					logger.info("订单号：{}生成微信支付码成功", product.getOutTradeNo());
 					String urlCode = (String) map.get("code_url");
 					ConfigUtil.shorturl(urlCode);// 转换为短链接
-					ZxingUtils.getQRCodeImge(urlCode, 256, imgPath);// 生成二维码
+//					ZxingUtils.getQRCodeImge(urlCode, 256, imgPath);// 生成二维码
 				} else {
 					String errCodeDes = (String) map.get("err_code_des");
 					logger.info("订单号：{}生成微信支付码(系统)失败:{}",
@@ -114,7 +112,7 @@ public class WeixinPayServiceImpl implements IWeixinPayService {
 		String imgPath = Constants.QRCODE_PATH + Constants.SF_FILE_SEPARATOR
 				+ product.getProductId() + ".png";
 		// 生成二维码
-		ZxingUtils.getQRCodeImge(qrCode.toString(), 256, imgPath);
+//		ZxingUtils.getQRCodeImge(qrCode.toString(), 256, imgPath);
 	}
 
 	@SuppressWarnings("rawtypes")
